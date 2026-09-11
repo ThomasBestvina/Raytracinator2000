@@ -2,20 +2,20 @@
   "camera": {
     "width": 800,
     "height": 800,
-    "fov": 60,
-    "from": [0, 5, -8],
+    "fov": 55,
+    "from": [0, 5, -7],
     "to": [0, 5, 5],
     "up": [0, 1, 0],
     "antialiasing": {
       "enabled": true,
-      "samples": 4
+      "samples": 16
     }
   },
   "lights": [
     {
       "type": "point",
-      "position": [0, 9.7, 5],
-      "color": [1.0, 0.98, 0.15]
+      "position": [0, 9.5, 5],
+      "color": [1.0, 1.0, 1.0]
     }
   ],
   "materials": {
@@ -24,8 +24,8 @@
       "reflective": 0.0,
       "shading": {
         "model": "phong",
-        "ambient": 0.35,
-        "diffuse": 0.65,
+        "ambient": 0.15,
+        "diffuse": 0.85,
         "specular": 0.0,
         "shininess": 10.0
       }
@@ -35,8 +35,8 @@
       "reflective": 0.0,
       "shading": {
         "model": "phong",
-        "ambient": 0.35,
-        "diffuse": 0.65,
+        "ambient": 0.15,
+        "diffuse": 0.85,
         "specular": 0.0,
         "shininess": 10.0
       }
@@ -46,8 +46,8 @@
       "reflective": 0.0,
       "shading": {
         "model": "phong",
-        "ambient": 0.35,
-        "diffuse": 0.65,
+        "ambient": 0.15,
+        "diffuse": 0.85,
         "specular": 0.0,
         "shininess": 10.0
       }

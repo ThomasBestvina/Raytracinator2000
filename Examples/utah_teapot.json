@@ -1,0 +1,66 @@
+{
+  "camera": {
+    "width": 800,
+    "height": 600,
+    "fov": 50,
+    "from": [0, 2.5, -6],
+    "to": [0, 1, 0],
+    "up": [0, 1, 0],
+    "antialiasing": {
+      "enabled": true,
+      "samples": 16
+    }
+  },
+  "background": "assets/kloppenheim_07_puresky_4k.png",
+  "lights": [
+    {
+      "type": "point",
+      "position": [-4, 6, -4],
+      "color": [1.0, 1.0, 1.0]
+    }
+  ],
+  "materials": {
+    "reflective_floor": {
+      "color": [0.15, 0.15, 0.18],
+      "reflective": 0.6,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.1,
+        "diffuse": 0.6,
+        "specular": 0.4,
+        "shininess": 120.0
+      }
+    },
+    "teapot": {
+      "pattern": {
+        "type": "texture",
+        "texture": "assets/red_brick_diff_4k.png"
+      },
+      "normal_map": "assets/red_brick_nor_dx_4k.png",
+      "reflective": 0.05,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.15,
+        "diffuse": 0.8,
+        "specular": 0.2,
+        "shininess": 40.0
+      }
+    }
+  },
+  "shapes": [
+    {
+      "type": "plane",
+      "material": "reflective_floor"
+    },
+    {
+      "type": "obj",
+      "path": "assets/utah_teapot.obj",
+      "material": "teapot",
+      "transform": [
+        ["translate", 0, 1.2, 0],
+        ["rotate_y", 20],
+        ["scale", 1.2, 1.2, 1.2]
+      ]
+    }
+  ]
+}
