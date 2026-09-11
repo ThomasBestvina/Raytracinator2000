@@ -1,0 +1,116 @@
+{
+  "camera": {
+    "width": 800,
+    "height": 800,
+    "fov": 60,
+    "from": [0, 5, -8],
+    "to": [0, 5, 5],
+    "up": [0, 1, 0],
+    "antialiasing": {
+      "enabled": true,
+      "samples": 4
+    }
+  },
+  "lights": [
+    {
+      "type": "point",
+      "position": [0, 9.7, 5],
+      "color": [1.0, 0.98, 0.15]
+    }
+  ],
+  "materials": {
+    "matte_white": {
+      "color": [0.73, 0.73, 0.70],
+      "reflective": 0.0,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.35,
+        "diffuse": 0.65,
+        "specular": 0.0,
+        "shininess": 10.0
+      }
+    },
+    "matte_red": {
+      "color": [0.63, 0.05, 0.05],
+      "reflective": 0.0,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.35,
+        "diffuse": 0.65,
+        "specular": 0.0,
+        "shininess": 10.0
+      }
+    },
+    "matte_green": {
+      "color": [0.05, 0.53, 0.05],
+      "reflective": 0.0,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.35,
+        "diffuse": 0.65,
+        "specular": 0.0,
+        "shininess": 10.0
+      }
+    }
+  },
+  "shapes": [
+    {
+      "type": "cube",
+      "material": "matte_white",
+      "transform": [
+        ["translate", 0, 0, 5],
+        ["scale", 5, 0.01, 5]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_white",
+      "transform": [
+        ["translate", 0, 10, 5],
+        ["scale", 5, 0.01, 5]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_white",
+      "transform": [
+        ["translate", 0, 5, 10],
+        ["scale", 5, 5, 0.01]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_red",
+      "transform": [
+        ["translate", -5, 5, 5],
+        ["scale", 0.01, 5, 5]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_green",
+      "transform": [
+        ["translate", 5, 5, 5],
+        ["scale", 0.01, 5, 5]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_white",
+      "transform": [
+        ["translate", -1.5, 3, 6],
+        ["rotate_y", -15],
+        ["scale", 1.5, 3, 1.5]
+      ]
+    },
+    {
+      "type": "cube",
+      "material": "matte_white",
+      "transform": [
+        ["translate", 1.5, 1.5, 3],
+        ["rotate_y", 18],
+        ["scale", 1.5, 1.5, 1.5]
+      ]
+    }
+  ]
+}

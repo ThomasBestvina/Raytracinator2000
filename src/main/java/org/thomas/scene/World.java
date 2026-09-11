@@ -51,7 +51,7 @@ public class World {
 
     public Color shadeHit(IntersectionComputation comps, int remaining) {
         Color surface = comps.shape.getMaterial()
-                .lighting(lights, comps.point, comps.eyev, comps.normalv,
+                .lighting(lights, comps.overPoint, comps.eyev, comps.normalv,
                         this, comps.shape, comps.intersection);
         Color reflected = reflectColor(comps, remaining);
         Color refracted = refractColor(comps, remaining);

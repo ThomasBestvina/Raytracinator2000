@@ -261,11 +261,10 @@ public class SceneLoader {
     private static Matrix parseTransformList(List<Object> transforms) {
         if (transforms.isEmpty()) return Matrix.identityMatrix();
 
-        List<Object> reversed = new ArrayList<>(transforms);
-        Collections.reverse(reversed);
+        List<Object> list = new ArrayList<>(transforms);
 
         Matrix result = Matrix.identityMatrix();
-        for (Object t : reversed) {
+        for (Object t : list) {
             result = result.multiply(parseSingleTransform(asList(t)));
         }
         return result;

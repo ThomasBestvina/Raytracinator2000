@@ -1,0 +1,103 @@
+{
+  "camera": {
+    "width": 800,
+    "height": 600,
+    "fov": 60,
+    "from": [0, 2, -7],
+    "to": [0, 1, 0],
+    "up": [0, 1, 0],
+    "antialiasing": {
+      "enabled": true,
+      "samples": 4
+    }
+  },
+  "lights": [
+    {
+      "type": "point",
+      "position": [-5, 8, -5],
+      "color": [1.0, 1.0, 1.0]
+    }
+  ],
+  "materials": {
+    "floor_material": {
+      "pattern": {
+        "type": "ring",
+        "a": [0.1, 0.1, 0.1],
+        "b": [0.9, 0.9, 0.9],
+        "transform": [["scale", 0.5, 0.5, 0.5]]
+      },
+      "reflective": 0.2,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.2,
+        "diffuse": 0.8,
+        "specular": 0.2
+      }
+    },
+    "mirror_ball": {
+      "color": [1, 1, 1],
+      "reflective": 0.9,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.0,
+        "diffuse": 0.1,
+        "specular": 0.9,
+        "shininess": 300.0
+      }
+    },
+    "glass_ball": {
+      "color": [1, 1, 1],
+      "transparency": 0.9,
+      "refractive": 1.5,
+      "reflective": 0.8,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.0,
+        "diffuse": 0.1,
+        "specular": 0.9,
+        "shininess": 300.0
+      }
+    },
+    "red_ball": {
+      "color": [0.8, 0.1, 0.1],
+      "reflective": 0.1,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.1,
+        "diffuse": 0.9,
+        "specular": 0.3,
+        "shininess": 50.0
+      }
+    }
+  },
+  "shapes": [
+    {
+      "type": "plane",
+      "material": "floor_material"
+    },
+    {
+      "type": "sphere",
+      "material": "mirror_ball",
+      "transform": [
+        ["scale", 1.2, 1.2, 1.2],
+        ["translate", -2.0, 1.2, 0.0]
+      ]
+    },
+    {
+      "type": "sphere",
+      "material": "glass_ball",
+      "transform": [
+        ["scale", 1.0, 1.0, 1.0],
+        ["translate", 0.0, 1.0, 1.5]
+      ]
+    },
+    {
+      "type": "sphere",
+      "material": "red_ball",
+      "transform": [
+        ["scale", 0.8, 0.8, 0.8],
+        ["translate", 1.8, 0.8, -1.0]
+      ]
+    }
+  ]
+}

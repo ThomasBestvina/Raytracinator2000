@@ -296,8 +296,8 @@ public class SceneLoaderTest {
     void multipleTransformsAreChainedInDeclarationOrder() throws IOException {
         SceneLoader.LoadedScene scene = load(baseScene(
                 "{\"type\": \"plane\", \"transform\": ["
-                        + "[\"rotate_y\", 90],"
-                        + "[\"translate\", 1, 0, 0]"
+                        + "[\"translate\", 1, 0, 0],"
+                        + "[\"rotate_y\", 90]"
                         + "]}"));
         Matrix t = scene.world.getShapes().get(0).getTransform();
         Matrix expected = Matrix.translation(1, 0, 0).multiply(Matrix.rotationY(Math.toRadians(90)));
