@@ -94,7 +94,7 @@ public class World {
 
     public Color colorAt(Ray r)
     {
-        return colorAt(r, 5); // TODO: Make config for how many allowed reflects, or perhaps in scene format?
+        return colorAt(r, 7); // TODO: Make config for how many allowed reflects, or perhaps in scene format?
     }
 
     public Color colorAt(Ray r, int remaining)

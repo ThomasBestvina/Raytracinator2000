@@ -1,0 +1,297 @@
+{
+  "camera": {
+    "width": 1920,
+    "height": 1080,
+    "fov": 45,
+    "from": [-4.2, 1.0, 4.0],
+    "to": [0.3, 0.5, 0],
+    "up": [0, 1, 0],
+    "antialiasing": {
+      "enabled": true,
+      "samples": 16
+    }
+  },
+  "background": "assets/kloppenheim_07_puresky_4k.png",
+  "lights": [
+    { "type": "point", "position": [-5, 7, 5], "color": [1.0, 1.0, 1.0] },
+    { "type": "point", "position": [4, 4, -3], "color": [0.5, 0.5, 0.55] },
+    { "type": "point", "position": [0, 2, 4], "color": [0.3, 0.3, 0.3] }
+  ],
+  "materials": {
+    "reflective_floor": {
+      "color": [0.15, 0.15, 0.18],
+      "reflective": 0.6,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.6, "specular": 0.4, "shininess": 120.0 }
+    },
+
+    "5_-_Default": {
+      "color": [0.5, 0.5, 0.5],
+      "reflective": 0.1,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.5, "shininess": 360.0 }
+    },
+    "6_-_Default": {
+      "color": [0.5, 0.5, 0.5],
+      "reflective": 0.1,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.5, "shininess": 250.0 }
+    },
+    "aluminium": {
+      "color": [0.75, 0.75, 0.75],
+      "reflective": 0.5,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.8, "specular": 0.6, "shininess": 902.5 }
+    },
+    "aluminium_with_logo": {
+      "color": [0.11, 0.11, 0.11],
+      "reflective": 0.4,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.55, "shininess": 532.9 }
+    },
+    "back_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_small_logo_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/pagani_small_logo_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.85, "specular": 0.4, "shininess": 490.0 }
+    },
+    "black_clay2": {
+      "color": [0.153, 0.153, 0.153],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.3, "shininess": 313.6 }
+    },
+    "black_clay": {
+      "color": [0.008, 0.008, 0.008],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.3, "shininess": 360.0 }
+    },
+    "black_plastic": {
+      "color": [0.02, 0.02, 0.02],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.4, "shininess": 883.6 }
+    },
+    "brakes_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_logo_brakes_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/pagani_logo_brakes_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.85, "specular": 0.4, "shininess": 300.0 }
+    },
+    "brakes_mat_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/brakes_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.4, "shininess": 250.0 }
+    },
+    "brakes_mat": {
+      "color": [1.0, 0.780392, 0.0],
+      "reflective": 0.2,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.5, "shininess": 348.1 }
+    },
+    "car_aluminium": {
+      "color": [0.717647, 0.717647, 0.717647],
+      "reflective": 0.5,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.8, "specular": 0.6, "shininess": 810.0 }
+    },
+    "car_aluminium_salon": {
+      "color": [0.474510, 0.447059, 0.435294],
+      "reflective": 0.3,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.5, "shininess": 490.0 }
+    },
+    "car_carbon_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_carbon_fibre_color_v02": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/carbon_fibre_color_v02.png" },
+      "reflective": 0.3,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.8, "specular": 0.6, "shininess": 1000.0 }
+    },
+    "car_clay": {
+      "color": [0.776471, 0.776471, 0.776471],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.3, "shininess": 360.0 }
+    },
+    "car_font_logp_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_front_logo_ao_v03": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/pagani_front_logo_ao_v03.png" },
+      "normal_map": "assets/zonda_parts/pagani_front_logo_normals_v02.png",
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.85, "specular": 0.4, "shininess": 518.4 }
+    },
+    "car_leather_2_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_romb_v01_color": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/leather_romb_v01_color.jpg" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.2, "shininess": 360.0 }
+    },
+    "car_paint": {
+      "color": [0.9686, 0.98, 1.0],
+      "reflective": 0.6,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.7, "specular": 0.9, "shininess": 1200.0 }
+    },
+    "car_wheel_logo": {
+      "color": [0.474510, 0.447059, 0.435294],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.5, "shininess": 490.0 }
+    },
+    "chrome": {
+      "color": [0.9, 0.9, 0.9],
+      "reflective": 0.9,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.5, "specular": 0.9, "shininess": 640.0 }
+    },
+    "glass_clay": {
+      "color": [0.05, 0.05, 0.05],
+      "transparency": 0.7,
+      "refractive": 1.5,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.5, "specular": 0.5, "shininess": 1000.0 }
+    },
+    "glass_front": {
+      "color": [0.95, 0.96, 0.97],
+      "transparency": 0.97,
+      "refractive": 1.1,
+      "reflective": 0.03,
+      "shading": {
+        "model": "phong",
+        "ambient": 0.02,
+        "diffuse": 0.0,
+        "specular": 0.5,
+        "shininess": 800.0
+      }
+    },
+    "hexagon_tile_transp": {
+      "color": [0.027451, 0.027451, 0.027451],
+      "transparency": 0.6,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.8, "specular": 0.4, "shininess": 562.5 }
+    },
+    "hexagon_tiles_black_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_hexagon_tile_black_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/hexagon_tile_black_color_v01.jpg" },
+      "normal_map": "assets/zonda_parts/hexagon_tile_normals_v01.jpg",
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.4, "shininess": 300.0 }
+    },
+    "leather_door_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_door_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/leather_door_color_v01.jpg" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.2, "shininess": 396.9 }
+    },
+    "light_glass_2_red": {
+      "color": [0.8, 0.05, 0.05],
+      "transparency": 0.6,
+      "refractive": 1.6,
+      "shading": { "model": "phong", "ambient": 0.2, "diffuse": 0.5, "specular": 0.5, "shininess": 1000.0 }
+    },
+    "light_glass": {
+      "color": [0.95, 0.95, 0.9],
+      "transparency": 0.8,
+      "refractive": 1.56,
+      "shading": { "model": "phong", "ambient": 0.2, "diffuse": 0.4, "specular": 0.6, "shininess": 1000.0 }
+    },
+    "light_refl_orange": {
+      "color": [1.0, 0.588235, 0.0],
+      "normal_map": "assets/zonda_parts/light_refl_normals_v01.png",
+      "shading": { "model": "phong", "ambient": 0.2, "diffuse": 0.8, "specular": 0.5, "shininess": 490.0 }
+    },
+    "light_refl_white": {
+      "color": [1.0, 1.0, 1.0],
+      "normal_map": "assets/zonda_parts/light_refl_normals_v01.png",
+      "shading": { "model": "phong", "ambient": 0.2, "diffuse": 0.8, "specular": 0.5, "shininess": 722.5 }
+    },
+    "lights_neon": {
+      "color": [1.0, 1.0, 0.9],
+      "shading": { "model": "phong", "ambient": 0.7, "diffuse": 0.6, "specular": 0.5, "shininess": 1000.0 }
+    },
+    "light_white_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_light_white_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/light_white_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.7, "specular": 0.55, "shininess": 1000.0 }
+    },
+    "mia_material_x_passes26SG": {
+      "color": [0.588, 0.588, 0.588],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.7, "specular": 0.5, "shininess": 10.0 }
+    },
+    "mirror": {
+      "color": [0.05, 0.05, 0.05],
+      "reflective": 0.85,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.3, "specular": 0.8, "shininess": 1000.0 }
+    },
+    "mirrors_sides_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_mirror_flag_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/pagani_mirror_flag_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.5, "shininess": 810.0 }
+    },
+    "numbers_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_numbers_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/numbers_color_v01.jpg" },
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.85, "specular": 0.4, "shininess": 490.0 }
+    },
+    "orange_glass": {
+      "color": [0.329412, 0.203922, 0.007843],
+      "transparency": 0.6,
+      "refractive": 1.56,
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.5, "specular": 0.5, "shininess": 1000.0 }
+    },
+    "red_glass": {
+      "color": [0.6, 0.0, 0.0],
+      "transparency": 0.65,
+      "refractive": 1.6,
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.5, "specular": 0.5, "shininess": 1000.0 }
+    },
+    "red_leather": {
+      "color": [0.745098, 0.050980, 0.0],
+      "normal_map": "assets/zonda_parts/hexagon_tile_normals_v01.jpg",
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.2, "shininess": 360.0 }
+    },
+    "red_lights_back_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_light_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/brakes_light_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.15, "diffuse": 0.85, "specular": 0.4, "shininess": 902.5 }
+    },
+    "red_metal_mat": {
+      "color": [0.752941, 0.0, 0.0],
+      "reflective": 0.3,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.5, "shininess": 592.9 }
+    },
+    "tires_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_tire_color_v01": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/wheel_tire_color_v01.png" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.15, "shininess": 360.0 }
+    },
+    "wheel_disks": {
+      "color": [0.1, 0.1, 0.1],
+      "reflective": 0.1,
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.8, "specular": 0.6, "shininess": 688.9 }
+    },
+    "white_clay": {
+      "color": [1.0, 1.0, 1.0],
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.9, "specular": 0.3, "shininess": 360.0 }
+    },
+    "wood1_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_wood_v01_color": {
+      "pattern": { "type": "texture", "texture": "assets/zonda_parts/wheel_wood_v01_color.png" },
+      "shading": { "model": "phong", "ambient": 0.1, "diffuse": 0.85, "specular": 0.4, "shininess": 640.0 }
+    },
+    "exteriormat":{
+      "color": [0.9686, 0.98, 0.97],
+      "reflective": 0.6,
+      "shading": { "model": "phong", "ambient": 0.2, "diffuse": 0.7, "specular": 0.9, "shininess": 1000.0 }
+    }
+  },
+
+  "shapes": [
+    { "type": "plane", "material": "reflective_floor" },
+
+    { "type": "obj", "path": "assets/zonda_parts/5_-_Default.obj", "material": "5_-_Default" },
+    { "type": "obj", "path": "assets/zonda_parts/6_-_Default.obj", "material": "6_-_Default" },
+    { "type": "obj", "path": "assets/zonda_parts/aluminium.obj", "material": "aluminium" },
+    { "type": "obj", "path": "assets/zonda_parts/aluminium_with_logo.obj", "material": "aluminium_with_logo" },
+    { "type": "obj", "path": "assets/zonda_parts/back_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_small_logo_color_v01.obj", "material": "back_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_small_logo_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/black_clay2.obj", "material": "black_clay2" },
+    { "type": "obj", "path": "assets/zonda_parts/black_clay.obj", "material": "black_clay" },
+    { "type": "obj", "path": "assets/zonda_parts/black_plastic.obj", "material": "black_plastic" },
+    { "type": "obj", "path": "assets/zonda_parts/brakes_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_logo_brakes_color_v01.obj", "material": "brakes_logo_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_logo_brakes_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/brakes_mat_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_color_v01.obj", "material": "brakes_mat_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/brakes_mat.obj", "material": "brakes_mat" },
+    { "type": "obj", "path": "assets/zonda_parts/car_aluminium.obj", "material": "car_aluminium" },
+    { "type": "obj", "path": "assets/zonda_parts/car_aluminium_salon.obj", "material": "car_aluminium_salon" },
+    { "type": "obj", "path": "assets/zonda_parts/car_carbon_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_carbon_fibre_color_v02.obj", "material": "car_carbon_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_carbon_fibre_color_v02" },
+    { "type": "obj", "path": "assets/zonda_parts/car_clay.obj", "material": "car_clay" },
+    { "type": "obj", "path": "assets/zonda_parts/car_font_logp_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_front_logo_ao_v03.obj", "material": "car_font_logp_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_front_logo_ao_v03" },
+    { "type": "obj", "path": "assets/zonda_parts/car_leather_2_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_romb_v01_color.obj", "material": "car_leather_2_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_romb_v01_color" },
+    { "type": "obj", "path": "assets/zonda_parts/car_paint.obj", "material": "car_paint" },
+    { "type": "obj", "path": "assets/zonda_parts/car_wheel_logo.obj", "material": "car_wheel_logo" },
+    { "type": "obj", "path": "assets/zonda_parts/chrome.obj", "material": "chrome" },
+    { "type": "obj", "path": "assets/zonda_parts/glass_clay.obj", "material": "glass_clay" },
+    { "type": "obj", "path": "assets/zonda_parts/glass_front.obj", "material": "glass_front" },
+    { "type": "obj", "path": "assets/zonda_parts/hexagon_tile_transp.obj", "material": "hexagon_tile_transp" },
+    { "type": "obj", "path": "assets/zonda_parts/hexagon_tiles_black_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_hexagon_tile_black_color_v01.obj", "material": "hexagon_tiles_black_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_hexagon_tile_black_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/leather_door_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_door_color_v01.obj", "material": "leather_door_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_leather_door_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/light_glass_2_red.obj", "material": "light_glass_2_red" },
+    { "type": "obj", "path": "assets/zonda_parts/light_glass.obj", "material": "light_glass" },
+    { "type": "obj", "path": "assets/zonda_parts/light_refl_orange.obj", "material": "light_refl_orange" },
+    { "type": "obj", "path": "assets/zonda_parts/light_refl_white.obj", "material": "light_refl_white" },
+    { "type": "obj", "path": "assets/zonda_parts/lights_neon.obj", "material": "lights_neon" },
+    { "type": "obj", "path": "assets/zonda_parts/light_white_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_light_white_color_v01.obj", "material": "light_white_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_light_white_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/mia_material_x_passes26SG.obj", "material": "mia_material_x_passes26SG" },
+    { "type": "obj", "path": "assets/zonda_parts/mirror.obj", "material": "mirror" },
+    { "type": "obj", "path": "assets/zonda_parts/mirrors_sides_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_mirror_flag_color_v01.obj", "material": "mirrors_sides_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_pagani_mirror_flag_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/numbers_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_numbers_color_v01.obj", "material": "numbers_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_numbers_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/orange_glass.obj", "material": "orange_glass" },
+    { "type": "obj", "path": "assets/zonda_parts/red_glass.obj", "material": "red_glass" },
+    { "type": "obj", "path": "assets/zonda_parts/red_leather.obj", "material": "red_leather" },
+    { "type": "obj", "path": "assets/zonda_parts/red_lights_back_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_light_color_v01.obj", "material": "red_lights_back_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_brakes_light_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/red_metal_mat.obj", "material": "red_metal_mat" },
+    { "type": "obj", "path": "assets/zonda_parts/tires_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_tire_color_v01.obj", "material": "tires_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_tire_color_v01" },
+    { "type": "obj", "path": "assets/zonda_parts/wheel_disks.obj", "material": "wheel_disks" },
+    { "type": "obj", "path": "assets/zonda_parts/white_clay.obj", "material": "white_clay" },
+    { "type": "obj", "path": "assets/zonda_parts/exteriormat.obj", "material": "exteriormat" },
+    { "type": "obj", "path": "assets/zonda_parts/wood1_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_wood_v01_color.obj", "material": "wood1_D___projects_CG_models_VFX_3ds_max_2011_sceneassets_images_pagani_zonda_wheel_wood_v01_color" }
+  ]
+}

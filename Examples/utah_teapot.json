@@ -1,9 +1,9 @@
 {
   "camera": {
-    "width": 800,
-    "height": 600,
+    "width": 400,
+    "height": 400,
     "fov": 50,
-    "from": [0, 2.5, -6],
+    "from": [0, 4.5, -10],
     "to": [0, 1, 0],
     "up": [0, 1, 0],
     "antialiasing": {
@@ -57,8 +57,8 @@
       "path": "assets/utah_teapot.obj",
       "material": "teapot",
       "transform": [
-        ["translate", 0, 1.2, 0],
-        ["rotate_y", 20],
+        ["translate", 0, 0, 0],
+        ["rotate_x", -90],
         ["scale", 1.2, 1.2, 1.2]
       ]
     }
